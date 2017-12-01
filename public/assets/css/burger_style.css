@@ -1,0 +1,50 @@
+.jumbotron {
+    background-image: url(../img/checkered-table.jpeg);
+    background-size: cover;
+}
+
+.display-3 {
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Anton', sans-serif; */
+    color: #eee;
+    text-shadow: -7px 0 black, 0 3px black, 1px 0 black, 0 -1px black;
+    letter-spacing: 5px;
+}
+
+.card-body {
+    border: solid black 2px;
+}
+
+.lead{
+    font-family: 'Leckerli One', cursive;
+}
+
+.card-title-lead {
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.card-title {
+    font-family: 'Leckerli One', cursive;
+    letter-spacing: 1.5px;
+    
+}
+
+li {
+    font-family: 'Montserrat', sans-serif;
+    padding: 5px;
+    margin: 5px;
+}
+
+label, #submit {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#footer {
+    background-color: #a82f3b;
+    padding: 20px;
+    position: absolute;
+    font-family: 'Anton', sans-serif;
+    font-size: 16px;
+    letter-spacing: 4px;
+}
