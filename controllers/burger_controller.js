@@ -19,7 +19,7 @@ router.get("/", function(req, res) {
     burger.insertOne([
       "burger_name"
     ], [
-      req.body.burger_name
+      req.body.name
     ], function(result) {
       // Sends back the ID of the new burger
       res.json({ id: result.insertId });

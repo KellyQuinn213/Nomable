@@ -1,8 +1,14 @@
 <li>
 	{{burger_name}}
 
-	<button type="button" class="btn btn-outline-danger btn-sm" class="eaten-state" id="devour-btn" data-id="{{id}}" data-newstate="{{devoured}}">
+	<button type="button"  class="eaten-state"  data-id="{{id}}" data-newstate="{{devoured}}">
 		{{#unless devoured}}DEVOUR IT!{{/unless}}
 	</button>
 
 </li>
+
+{{!-- Why can't I have multiple classes on this button? --}}
+{{!-- Whichever comes first is executed. So I lose the nice looking buttons or the on-click function--}}
+{{!-- Can this be fixed?--}}
+
+{{!-- class="btn btn-outline-danger btn-sm" --}}

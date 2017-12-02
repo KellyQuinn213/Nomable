@@ -4,13 +4,14 @@ $(function () {
         var newState = $(this).data("newstate")
 
         var newEatenState = {
-            devoured: newState
+            devoured: true
         };
 
         // PUT request
         $.ajax("/api/burgers/" + id, {
             type: "PUT",
             data: newEatenState
+        // This then function is not console logging...but is reloading?
         }).then(
             function () {
                 console.log("Burger has been devoured!", newState)
@@ -22,11 +23,12 @@ $(function () {
     $("#submit").on("click", function (event) {
         // Make sure to preventDefault on a submit event.
         event.preventDefault();
-        console.log($("#nw-brg").val().trim())
 
         var newBurger = {
-            name: $("#nw-brg").val().trim(),
+            name: $("#nw-brg").val().trim()
         };
+        console.log(newBurger)
+        
 
         // Send the POST request.
         $.ajax("/api/burgers", {
