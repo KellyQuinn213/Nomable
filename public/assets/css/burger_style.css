@@ -40,11 +40,39 @@ label, #submit {
     font-family: 'Montserrat', sans-serif;
 }
 
+.eaten-state {
+    margin: 0;
+    user-select: none;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    padding: .25rem .5rem;
+    font-size: .875rem;
+    line-height: 1.5;
+    border-radius: .2rem;
+    transition: all .15s ease-in-out;
+    text-transform: none;
+    overflow: visible;
+    font-family: 'Montserrat', sans-serif;
+    color: #dc3545;
+    background-color: white;
+    border-color: #dc3545;
+}
+
+.eaten-state:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
 #footer {
     background-color: #a82f3b;
     padding: 20px;
     position: absolute;
     font-family: 'Anton', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     letter-spacing: 4px;
 }

@@ -5,6 +5,7 @@ $(function () {
 
         var newEatenState = {
             devoured: true
+        
         };
 
         // PUT request
